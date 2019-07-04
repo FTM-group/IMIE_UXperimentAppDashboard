@@ -1,0 +1,19 @@
+.section-shaped .shape-style-1.shape-primary {
+  background-image: linear-gradient(to right top, #e6c51e, #eacb34, #edd246, #f1d855, #f5de64) !important;
+}
+
+@media (min-width: 992px) {
+  .mt--300 {
+    margin-top: -404px!important;
+  }
+}
+
+@media (max-width: 992px) {
+  .mt--300 {
+    margin-top: -204px!important;
+  }
+}
+
+.separator {
+  z-index: 0;
+}
