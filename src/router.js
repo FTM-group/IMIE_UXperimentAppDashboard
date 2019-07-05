@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from "./App";
-import Graph from "./Components/Graph/Graph";
+import GraphPage from "./GraphPage";
+// import Graph from "./Components/Graph/Graph";
 
 const Router = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={App} />
-            <Route path="/graph" component={Graph} />
+            <Route exact path="/graph" component={GraphPage} />
+            {/* <Route path="/graph" component={Graph} /> */}
         </Switch>
     </BrowserRouter>
 );
