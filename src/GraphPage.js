@@ -39,5 +39,4 @@ function GraphPage() {
   );
 } 
 
-
 export default GraphPage;

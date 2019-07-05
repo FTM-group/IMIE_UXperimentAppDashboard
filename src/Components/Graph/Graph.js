@@ -1,5 +1,6 @@
 import React from 'react';
 import Chart from '../Charts/Chart';
+import Chart2 from '../Charts/Chart2';
 
 
 class Graph extends React.Component {
@@ -58,7 +59,7 @@ render() {
                         <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
                     </div>
                     <div class="col">
-                        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+                        <Chart2 chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
                     </div>
                 </div>
             </div>
