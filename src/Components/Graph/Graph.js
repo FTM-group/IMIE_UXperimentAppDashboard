@@ -2,7 +2,6 @@ import React from 'react';
 import Chart from '../Charts/Chart';
 import Chart2 from '../Charts/Chart2';
 
-
 class Graph extends React.Component {
     constructor() {
         super();
@@ -47,25 +46,25 @@ class Graph extends React.Component {
     }
 
 
-render() {
-    return (
-        <div class="container">
-            <div className="App">
-                <div className="App-header">
-                    {/* <h2>Hello World !</h2> */}
-                </div>
-                <div class="row justify-content-md-center">
-                    <div class="col">
-                        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+    render() {
+        return (
+            <div className="container">
+                <div className="App">
+                    <div className="App-header">
+                        {/* <h2>Hello World !</h2> */}
                     </div>
-                    <div class="col">
-                        <Chart2 chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+                    <div className="row justify-content-md-center">
+                        <div className="col">
+                            <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+                        </div>
+                        <div className="col">
+                            <Chart2 chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
-    
-}
+        );
+        
+    }
 }
 export default Graph;

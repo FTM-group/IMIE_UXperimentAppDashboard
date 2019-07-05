@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Graph from './Components/Graph/Graph';
+import CarouselGame from './Components/CarouselGame/CarouselGame';
 
 import './App.css';
 import './GraphPage.css';
@@ -33,6 +34,7 @@ function GraphPage() {
             </div>
           </section> */}
           <Graph />
+		  <CarouselGame />
         </div>
       </main>
     </div>

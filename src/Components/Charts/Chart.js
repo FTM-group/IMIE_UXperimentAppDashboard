@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Bar, Line, Pie, Doughnut } from 'react-chartjs-2';
+import { Bar, Line } from 'react-chartjs-2';
 
 class Chart extends Component {
     constructor(props) {
@@ -19,7 +19,8 @@ class Chart extends Component {
     render() {
         return (
             <div className="chart">
-                <Bar
+
+                {/* <Bar
                     data={this.state.chartData}
                     options={{
                         title: {
@@ -32,7 +33,7 @@ class Chart extends Component {
                             position: this.props.legendPosition
                         }
                     }}
-                />
+                /> */}
 
                 <Line
                     data={this.state.chartData}
@@ -47,7 +48,6 @@ class Chart extends Component {
                             position: this.props.legendPosition
                         }
                     }}
-                />
                 />
             </div>
         )
