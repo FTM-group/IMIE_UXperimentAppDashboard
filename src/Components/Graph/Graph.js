@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from '../../Chart';
+import Chart from '../Charts/Chart';
 
 
 class Graph extends React.Component {
@@ -48,12 +48,20 @@ class Graph extends React.Component {
 
 render() {
     return (
-        
-        <div className="App">
-            <div className="App-header">
-                <h2>Hello World !</h2>
+        <div class="container">
+            <div className="App">
+                <div className="App-header">
+                    {/* <h2>Hello World !</h2> */}
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+                    </div>
+                    <div class="col">
+                        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+                    </div>
+                </div>
             </div>
-            <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
         </div>
     );
     
