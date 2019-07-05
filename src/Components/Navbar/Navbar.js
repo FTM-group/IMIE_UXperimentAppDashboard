@@ -33,7 +33,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link nav-link-icon" href="/Graph">
+              <a className="nav-link nav-link-icon" href="/graph">
                 Graphique
               </a>
             </li>

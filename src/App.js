@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Container from './Components/Container/Container';
-import Graph from './Components/Container/Graph';
+// import Graph from './Components/Container/Graph';
 
 import './App.css';
 import './assets/css/argon.min.css';
