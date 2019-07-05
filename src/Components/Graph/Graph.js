@@ -1,79 +1,62 @@
 import React from 'react';
+import Chart from '../../Chart';
 
-import Chart from "chart.js";
 
-export default function Graph() {
-
-    var canvas = document.getElementById("barChart");
-    var ctx = canvas.getContext('2d');
-
-    var data = {
-        labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
-        datasets: [
-            {
-                label: "My Second dataset",
-                fillColor: "rgba(0,191,255,0.5)",
-                strokeColor: "rgba(0,191,255,0.8)",
-                highlightFill: "rgba(100,149,237,0.75)",
-                highlightStroke: "rgba(100,149,237,1)",
-                data: [60, 50, 40, 30, 20, 10, 20],
-                borderColor: 'grey',
-                borderWidth: 1,        
-            }
-        ]
-    };
-
-    var options = {
-        legend: {
-            display: true,
-        },
-        tooltips: {
-            enabled: false,
-        },
-        scales: {
-            xAxes: [{
-                display: true,
-                ticks: {
-                    beginAtZero:true
-                },        
-            }],
-            yAxes: [{
-                display: true,
-                    ticks: {
-                        beginAtZero:true
-                    },        
-            }]
-        },      
-        annotation: {
-            annotations: [{
-                type: 'line',
-                mode: 'horizontal',
-                scaleID: 'y-axis-0',
-                value: '26',
-                borderColor: 'tomato',
-                borderWidth: 1
-            }],
-            drawTime: "afterDraw" // (default)
+class Graph extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            chartData: {}
         }
-    };
+    }
 
-    // Chart declaration:
-    var multiLineChart = new Chart(ctx, {
-        type: 'bar',
-        data: data,
-        options: options
-    });
-    
+    componentWillMount() {
+        this.getChartData();
+    }
+
+    getChartData() {
+        // Ajax calls here
+        this.setState({
+            chartData: {
+                labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+                datasets: [
+                    {
+                        label: 'Population',
+                        data: [
+                            617594,
+                            181045,
+                            153060,
+                            106519,
+                            105162,
+                            95072
+                        ],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.6)',
+                            'rgba(54, 162, 235, 0.6)',
+                            'rgba(255, 206, 86, 0.6)',
+                            'rgba(75, 192, 192, 0.6)',
+                            'rgba(153, 102, 255, 0.6)',
+                            'rgba(255, 159, 64, 0.6)',
+                            'rgba(255, 99, 132, 0.6)'
+                        ]
+                    }
+                ]
+            }
+        });
+    }
+
+
+render() {
     return (
-        <div class="container">
-            <br />
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <canvas id="barChart"></canvas>
-                </div>
-                <div class="col-md-1"></div>
+        
+        <div className="App">
+            <div className="App-header">
+                <h2>Hello World !</h2>
             </div>
+            <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
         </div>
     );
+    
 }
+}
+export default Graph;
