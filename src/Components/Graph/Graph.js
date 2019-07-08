@@ -46,25 +46,26 @@ class Graph extends React.Component {
     }
 
 
-    render() {
-        return (
-            <div className="container">
-                <div className="App">
-                    <div className="App-header">
-                        {/* <h2>Hello World !</h2> */}
+render(){
+    return (
+        <div class="container">
+            <div className="App">
+                <div className="App-header">
+                    {/* <h2>Hello World !</h2> */}
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
                     </div>
-                    <div className="row justify-content-md-center">
-                        <div className="col">
-                            <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
-                        </div>
-                        <div className="col">
-                            <Chart2 chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
-                        </div>
-                    </div>
+                    {/* <div class="col">
+                        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+                    </div> */}
                 </div>
             </div>
-        );
-        
-    }
+        </div>
+
+    );
+    
+}
 }
 export default Graph;

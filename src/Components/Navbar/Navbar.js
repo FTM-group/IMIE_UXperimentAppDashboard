@@ -3,11 +3,14 @@ import './Navbar.css';
 
 export default function Navbar() {
   const [collapse, setCollapse] = useState(false);
+  const logo = require('../../assets/images/logo.png');
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-default">
       <div className="container">
-        <a className="navbar-brand" href="/">Sunshare Dashboard</a>
+        
+        <img src={logo} width="50" height="50" alt="Logo Sunshare" />
+        
         <button onClick={() => setCollapse(true)} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>

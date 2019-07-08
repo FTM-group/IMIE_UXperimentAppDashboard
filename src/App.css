@@ -1,5 +1,6 @@
 .section-shaped .shape-style-1.shape-primary {
-  background-image: linear-gradient(to right top, #e6c51e, #eacb34, #edd246, #f1d855, #f5de64) !important;
+  /* background-image: linear-gradient(to right top, #e6c51e, #eacb34, #edd246, #f1d855, #f5de64) !important; */
+  background-image: linear-gradient(to right top, #e6961e, #eacb34, #edd246, #f1d855, #f59264) !important;
 }
 
 @media (min-width: 992px) {

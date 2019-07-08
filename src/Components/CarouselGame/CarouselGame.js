@@ -1,14 +1,16 @@
 import React from 'react';
-// import Img1 from './assets/imgs/img1.jpg';
 
 export default function CarouselGame() {
+
+  const img1 = require('../../assets/images/img1.jpg');
+  const img2 = require('../../assets/images/img2.jpg');
 
   return (
    
     <div className="container">
         <div className="carousel-item">
-            {/* <img src={Img1}  alt="Image1"/> */}
-            <img src=""  alt="Image1"/>
+            <img src={img1}  alt="Image1"/>
+            <img src={img2}  alt="Image2"/>
             <div className="carousel-caption d-none d-md-block">
                 <h5>Conseil1</h5>
                 <p>Lorem ipsum</p>
@@ -17,4 +19,3 @@ export default function CarouselGame() {
     </div>
   );
 }
-// export default CarouselGame;
