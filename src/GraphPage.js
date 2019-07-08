@@ -1,7 +1,9 @@
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Graph from './Components/Graph/Graph';
-import CarouselGame from './Components/CarouselGame/CarouselGame';
+
+import CarouselSun from './Components/CarouselSun/CarouselSun';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import './App.css';
 import './GraphPage.css';
@@ -34,7 +36,7 @@ function GraphPage() {
             </div>
           </section> */}
           <Graph />
-          <CarouselGame />
+		  <CarouselSun />
         </div>
       </main>
     </div>
