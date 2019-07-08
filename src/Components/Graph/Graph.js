@@ -46,7 +46,7 @@ class Graph extends React.Component {
     }
 
 
-render() {
+render(){
     return (
         <div class="container">
             <div className="App">
@@ -57,12 +57,13 @@ render() {
                     <div class="col">
                         <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
                     </div>
-                    <div class="col">
+                    {/* <div class="col">
                         <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
+
     );
     
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import logo from './assets/images/image.jpg';
 
 export default function Navbar() {
   const [collapse, setCollapse] = useState(false);
@@ -7,7 +8,14 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container">
-        <a className="navbar-brand" href="/">Sunshare Dashboard</a>
+        
+          <img
+            src={logo}
+            width="30"
+            height="30"
+            alt="Logo Sunshare"
+          />
+        
         <button onClick={() => setCollapse(true)} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
