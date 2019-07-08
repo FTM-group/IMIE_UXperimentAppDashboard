@@ -34,13 +34,7 @@ function GraphPage() {
             </div>
           </section> */}
           <Graph />
-          <div className="carousel-item">
-            {/* <img src="./image.jpg" alt="image"/> */}
-              <div className="carousel-caption d-none d-md-block">
-                <h5>...</h5>
-                <p>...</p>
-              </div>
-          </div>
+          <CarouselGame />
         </div>
       </main>
     </div>
