@@ -2,6 +2,8 @@ import React from 'react';
 import Chart from '../Charts/Chart';
 import Chart2 from '../Charts/Chart2';
 
+import './Graph.css';
+
 class Graph extends React.Component {
     constructor() {
         super();
@@ -28,7 +30,8 @@ class Graph extends React.Component {
                             153060,
                             106519,
                             105162,
-                            95072
+                            95072,
+                            90000
                         ],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.6)',
@@ -46,26 +49,26 @@ class Graph extends React.Component {
     }
 
 
-render(){
-    return (
-        <div class="container">
-            <div className="App">
-                <div className="App-header">
-                    {/* <h2>Hello World !</h2> */}
-                </div>
-                <div class="row justify-content-md-center">
-                    <div class="col">
-                        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+    render(){
+        return (
+            <div class="container">
+                <div className="App">
+                    <div className="App-header">
+                        {/* <h2>Hello World !</h2> */}
                     </div>
-                    {/* <div class="col">
-                        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
-                    </div> */}
+                    <div class="row justify-content-md-center">
+                        <div class="col">
+                            <Chart chartData={this.state.chartData} location="SunShare" legendPosition="bottom" />
+                        </div>
+                        {/* <div class="col">
+                            <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+                        </div> */}
+                    </div>
                 </div>
             </div>
-        </div>
 
-    );
-    
-}
+        );
+        
+    }
 }
 export default Graph;

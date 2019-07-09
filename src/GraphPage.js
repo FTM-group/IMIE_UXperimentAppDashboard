@@ -13,32 +13,21 @@ import './assets/icons/icofont.min.css';
 function GraphPage() {
   return (
     <div>
-      <Navbar />
-      <main>
-         <div className="position-relative">
-          { /*<section className="section section-lg section-hero section-shaped">
-            <div className="shape shape-style-1 shape-primary">
-              <span className="span-150" />
-              <span className="span-50" />
-              <span className="span-50" />
-              <span className="span-75" />
-              <span className="span-100" />
-              <span className="span-75" />
-              <span className="span-50" />
-              <span className="span-100" />
-              <span className="span-50" />
-              <span className="span-100" />
-            </div> */}
-            {/* <div className="separator separator-bottom separator-skew">
-              <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <polygon className="fill-white" points="2560 0 2560 100 0 100" />
-              </svg>
-            </div>
-          </section> */}
-          <Graph />
-		  <CarouselSun />
-        </div>
-      </main>
+      	<Navbar />
+		<main>
+			<div className="position-relative">
+				<div className="container">
+					<div className="row row-grid">
+						<div className="col">
+							<Graph />
+						</div>
+						<div className="col">
+							<CarouselSun />
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
     </div>
   );
 } 

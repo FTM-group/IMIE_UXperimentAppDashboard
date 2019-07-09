@@ -1,5 +1,17 @@
 import React, { useState } from 'react';
+import ModalInfo from '../ModalInfo/ModalInfo';
+
 import './Navbar.css';
+
+import { faInfo } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { library } from '@fortawesome/fontawesome-svg-core';
+
+
+function activateModal() {
+	console.log('ok');
+	// <ModalInfo />
+}
 
 export default function Navbar() {
   const [collapse, setCollapse] = useState(false);
@@ -38,6 +50,12 @@ export default function Navbar() {
             <li className="nav-item">
               <a className="nav-link nav-link-icon" href="/graph">
                 Graphique
+              </a>
+            </li>
+			<li className="nav-item">
+              <a className="nav-link nav-link-icon" href="#">
+				{/* <i class="fas fa-info-circle"></i> */}
+				<FontAwesomeIcon icon={faInfo} onClick={() => activateModal()}/>
               </a>
             </li>
           </ul>
