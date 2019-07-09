@@ -19,15 +19,26 @@ function GraphPage() {
 		<main>
 			<div className="position-relative">
 				{/* <div className="container"> */}
-					<div className="row row-grid">
-						<div className="col">
+					<div className="row row-grid box">
+						<div className="col-sm-7">
 							<Graph />
 						</div>
-						<div className="col">
-							
+						<div className="col-sm-5 subox">
+							<div className="alert alert-secondary indexBox" role="alert">
+								<span><strong>Index </strong></span>
+								<span className="badge badge-default">4000000</span>
+							</div>
+							<div className="alert alert-secondary indexBox" role="alert">
+								<span><strong>Consommation </strong></span>
+								<span className="badge badge-success">-300</span>
+							</div>
+							<div className="alert alert-secondary indexBox"  role="alert">
+								<span><strong>AutoConsommation </strong></span>
+								<span className="badge badge-warning">1000</span>
+							</div>
 						</div>
 					</div>
-					<div className="row row-grid">
+					<div className="row row-grid box">
 						<div className="col">
 							<Graph2 />
 						</div>

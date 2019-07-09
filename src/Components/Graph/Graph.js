@@ -58,11 +58,11 @@ class Graph extends React.Component {
                     <div className="App-header">
                         {/* <h2>Hello World !</h2> */}
                     </div>
-                    <div class="row justify-content-md-center">
-                        <div class="col">
+                    <div className="row justify-content-md-center">
+                        <div className="col">
                             <Chart chartData={this.state.chartData} location="SunShare" legendPosition="bottom" />
                         </div>
-                        {/* <div class="col">
+                        {/* <div className="col">
                             <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
                         </div> */}
                     </div>

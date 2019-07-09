@@ -37,16 +37,16 @@ class Graph2 extends React.Component {
 
     render(){
         return (
-            <div class="container">
+            <div className="container">
                 <div className="App">
                     <div className="App-header">
                         {/* <h2>Hello World !</h2> */}
                     </div>
-                    <div class="row justify-content-md-center">
-                        <div class="col">
+                    <div className="row justify-content-md-center">
+                        <div className="col">
                             <Chart2 chartData={this.state.chartData} location="SunShare" legendPosition="bottom" />
                         </div>
-                        {/* <div class="col">
+                        {/* <div className="col">
                             <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
                         </div> */}
                     </div>

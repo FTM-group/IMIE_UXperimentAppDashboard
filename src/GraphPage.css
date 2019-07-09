@@ -1,8 +1,10 @@
-h2 {
-    text-align: center;
-    color : black;
+.box, .subox {
+    padding: 1em;
+}
+.indexBox {
+    width: 40%;
+}
+.col, .test {
+    /* border: 1px solid gray; */
 }
 
-main {
-    margin-top: 50px;
-}
