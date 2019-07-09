@@ -1,0 +1,14 @@
+  .carousel .slide .legend {
+      position: absolute;
+      bottom: 43% !important;
+      left: 50%;
+      margin-left: -50% !important;
+      width: 100% !important;
+      border-radius: 10px;
+      background: transparent !important;
+      color: black !important;
+      padding: 10px;
+      font-size: 23px !important;
+      text-align: center;
+      opacity: 1 !important;
+    }
