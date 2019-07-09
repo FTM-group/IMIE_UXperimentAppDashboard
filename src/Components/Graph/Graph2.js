@@ -1,9 +1,9 @@
 import React from 'react';
-import Chart from '../Charts/Chart';
+import Chart2 from '../Charts/Chart2';
 
 import './Graph.css';
 
-class Graph extends React.Component {
+class Graph2 extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -22,26 +22,10 @@ class Graph extends React.Component {
                 labels: ['Production', 'Consommation', 'Autoconsommation'],
                 datasets: [
                     {
-                        label: 'Production',
+                        label: 'Prodcution',
                         data: [1000, 2000],
                         backgroundColor: [
-                            "rgba(240, 247, 15, 0.6)" // zone
-
-                        ]
-                    },
-                    {
-                        label: 'Consommation',
-                        data: [1000, 2000],
-                        backgroundColor: [
-                            "rgba(240, 247, 15, 0.6)" // zone
-
-                        ]
-                    },
-                    {
-                        label: 'AutoConsommation',
-                        data: [1000, 2000],
-                        backgroundColor: [
-                            "rgba(240, 247, 15, 0.6)" // zone
+                            "rgba(240, 247, 15, 0.2)" // zone
 
                         ]
                     },
@@ -60,7 +44,7 @@ class Graph extends React.Component {
                     </div>
                     <div class="row justify-content-md-center">
                         <div class="col">
-                            <Chart chartData={this.state.chartData} location="SunShare" legendPosition="bottom" />
+                            <Chart2 chartData={this.state.chartData} location="SunShare" legendPosition="bottom" />
                         </div>
                         {/* <div class="col">
                             <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
@@ -73,4 +57,4 @@ class Graph extends React.Component {
         
     }
 }
-export default Graph;
+export default Graph2;

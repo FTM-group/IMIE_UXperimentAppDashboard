@@ -40,7 +40,7 @@ class Chart2 extends Component {
                     options={{
                         title: {
                             display: this.props.displayTitle,
-                            text: 'Largest Cities In ' + this.props.location,
+                            text: 'Conso & Prod & AutoConso de ' + this.props.location,
                             fontSize: 25
                         },
                         legend: {

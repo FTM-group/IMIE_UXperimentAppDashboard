@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Line, Doughnut } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 import './Chart.css';
 
@@ -27,7 +27,7 @@ class Chart extends Component {
                     options={{
                         title: {
                             display: this.props.displayTitle,
-                            text: 'Conso & AutoConso & Prod ' + this.props.location,
+                            text: 'Conso & AutoConso & Prod de ' + this.props.location,
                             fontSize: 25
                         },
                         legend: {
@@ -36,7 +36,7 @@ class Chart extends Component {
                         }
                     }}
                 />
-                <div className="doughnutBox">
+                {/* <div className="doughnutBox">
                 <Doughnut
                     data={this.state.chartData}
                     options={{
@@ -51,7 +51,7 @@ class Chart extends Component {
                         }
                     }}
                 />
-                </div>
+                </div> */}
             </div>
         )
     }
