@@ -2,9 +2,32 @@
     padding: 1em;
 }
 .indexBox {
-    width: 40%;
+    /* width: 120px; */
+    width: 5em;
+    font-size: 1.4em;
+    /* color: red; */
+    text-align: center;
+}
+.badgeCircleTitle {
+    text-align: center;
+    width: 8em;
+}
+.alert.badgeCircle {
+    border-radius: 50%;
+    height: 8em;
+    width: 8em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span.badgeCircleNumber {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+span.indexBoxNumber {
+    font-size: 1em;
 }
 .col, .test {
     /* border: 1px solid gray; */
 }
-
