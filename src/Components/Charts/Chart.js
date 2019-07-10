@@ -27,7 +27,7 @@ class Chart extends Component {
                     options={{
                         title: {
                             display: this.props.displayTitle,
-                            text: 'Conso & AutoConso & Prod de ' + this.props.location,
+                            text: 'Conso & Prod de ' + this.props.location,
                             fontSize: 25
                         },
                         legend: {
