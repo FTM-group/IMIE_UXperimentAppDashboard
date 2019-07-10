@@ -24,11 +24,11 @@ function GraphPage() {
 							<Graph />
 						</div>
 						<div className="col-sm-2 subox">
-							<div className="alert alert-default badgeCircleTitle" role="alert">
+							{/* <div className="alert alert-default badgeCircleTitle" role="alert">
 								<span><strong>Tx Conso</strong></span>
-							</div>
+							</div> */}
 							<div className="alert alert-success badgeCircle" role="alert">
-								<span className="badgeCircleNumber">120</span>
+								<span className="badgeCircleNumber">+120 kW</span>
 								{/* <span className="badge badge-default">-120</span> */}
 							</div>
 							<div className="alert alert-secondary indexBox" role="alert">
