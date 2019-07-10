@@ -19,34 +19,26 @@ class Graph2 extends React.Component {
         // Ajax calls here
         this.setState({
             chartData: {
-                labels: ['Production', 'Consommation', 'Autoconsommation'],
+                labels: ['Autconsommation', 'Prodcution', 'Consommation'],
                 datasets: [
-                    {
-                        label: 'Prodcution',
-                        data: [812, 1000],
-                        backgroundColor: [
-                            "rgba(240, 247, 15, 1)", // zone
-                            "rgba(255, 255, 255,1)"
-                        ]
-                    },
-                    {
-                        label: 'Consommation',
-                        data: [775, 1000],
-                        backgroundColor: [
-                            "rgba(219, 70, 29,1)", // zone
-                            "rgba(255, 255, 255,1)"
-
-                        ]
-                    },
                     {
                         label: 'Autoconsommation',
                         data: [225, 1000],
                         backgroundColor: [
                             "rgba(43, 220, 240,1)",// zone
                             "rgba(255, 255, 255,1)" 
-
                         ]
                     },
+                    {
+                        label: 'Consommation',
+                        data: [692, 812],
+                        backgroundColor: [
+                            "rgba(219, 70, 29,1)",// zone
+                            "rgba(240, 247, 15, 1)" 
+                            
+                        ]
+                    },
+                    
                 ]
             }
         });
