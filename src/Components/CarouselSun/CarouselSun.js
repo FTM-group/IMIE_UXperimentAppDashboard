@@ -11,26 +11,26 @@ export default function CarouselSun() {
             <Carousel autoPlay infiniteLoop>
                 <div>
                     <p className="legend">Mettre un couvercle sur une casserole pour faire bouillir de l’eau, c’est 4 fois moins d’énergie consommée !</p>
-                    <img src={img1}/>
+                    <img src={img1} alt="Couleur de fond"/>
                 </div>
                 <div>
-                    <img src={img1} />
+                    <img src={img1} alt="Couleur de fond" />
                     <p className="legend">Si vous réglez votre lave-linge à 40°C, vous consommez 25 % d'énergie en moins qu’en cycle court à 60 °C.</p>
                 </div>
                 <div>
-                    <img src={img1}/>
+                    <img src={img1} alt="Couleur de fond"/>
                     <p className="legend">Une ampoule bien dépoussiérée offre 40 % d’éclairage supplémentaire.</p>
                 </div> 
                 <div>
-                    <img src={img1} />
+                    <img src={img1} alt="Couleur de fond" />
                     <p className="legend">Réguler et programmer votre chauffage vous permet de consommer jusqu’à 10 % de moins.</p>
                 </div> 
                 <div>
-                    <img src={img1} />
+                    <img src={img1} alt="Couleur de fond" />
                     <p className="legend">Plus votre douche est rapide, moins vous consommez d'eau et d'énergie. Pensez à arrêter le robinet quand vous vous savonnez.</p>
                 </div> 
                 <div>
-                    <img src={img1} />
+                    <img src={img1} alt="Couleur de fond" />
                     <p className="legend">En branchant les équipements électriques sur une multiprise à interrupteur, il est facile de couper toutes les veilles en même temps.</p>
                 </div> 
             </Carousel>

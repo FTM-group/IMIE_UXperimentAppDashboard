@@ -71,7 +71,7 @@ class Graph extends React.Component {
 
     render(){
         return (
-            <div class="container">
+            <div className="container">
                 <div className="App">
                     <div className="App-header">
                         {/* <h2>Hello World !</h2> */}
