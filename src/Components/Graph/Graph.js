@@ -19,11 +19,11 @@ class Graph extends React.Component {
         // Ajax calls here
         this.setState({
             chartData: {
-                labels: ['Production', 'Consommation', 'Autoconsommation'],
+                labels: ['6h', '9h', '12h', '15h', '18h', '21h', '0h', '3h', '6h', '9h', '12h', '15h', '18h', '21h', '0h', '3h', '6h', '9h', '12h', '15h', '18h', '21h', '0h', '3h'],
                 datasets: [
                     {
                         label: 'Production',
-                        data: [12, 19, 3, 5, 2, 3],
+                        data: [147, 1210, 1792, 1869, 1258, 222, 0, 0, 147, 1210, 1792, 1869, 1258, 222, 0, 0, 147, 1210, 1792, 1869, 1258, 222, 0, 0],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
@@ -44,9 +44,9 @@ class Graph extends React.Component {
                     },
                     {
                         label: 'Consommation',
-                        data: [12, 19, 3, 5, 2, 3],
+                        data: [-1121, -31, -154, -1075, -4, -291, -434, -354, -1121, -31, -154, -1075, -4, -291, -434, -354, -1121, -31, -154, -1075, -4, -291, -434, -354],
                         backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(245, 221, 66, 0.4)',
                             'rgba(54, 162, 235, 0.2)',
                             'rgba(255, 206, 86, 0.2)',
                             'rgba(75, 192, 192, 0.2)',
@@ -62,28 +62,7 @@ class Graph extends React.Component {
                             'rgba(255, 159, 64, 1)'
                         ],
                         borderWidth: 1
-                    },
-                    {
-                        label: 'Autoconsommation',
-                        data: [12, 19, 3, 5, 2, 3],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
-                    },
+                    }
                 ]
             }
         });
