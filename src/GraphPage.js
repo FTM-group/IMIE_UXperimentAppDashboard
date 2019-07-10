@@ -24,30 +24,23 @@ function GraphPage() {
 							<Graph />
 						</div>
 						<div className="col-sm-2 subox">
-							{/* <div className="alert alert-default badgeCircleTitle" role="alert">
-								<span><strong>Tx Conso</strong></span>
-							</div> */}
 							<div className="alert alert-success badgeCircle" role="alert">
 								<span className="badgeCircleNumber">+120 kW</span>
-								{/* <span className="badge badge-default">-120</span> */}
 							</div>
 							<div className="alert alert-secondary indexBox" role="alert">
 								<span><strong>Index </strong></span>
 								<span className="badge badge-info indexBoxNumber">37652</span>
 							</div>
-							{/* <div className="alert alert-secondary indexBox" role="alert">
-								<span><strong>Consommation </strong></span>
-								<span className="badge badge-success">-300</span>
-							</div>
-							<div className="alert alert-secondary indexBox"  role="alert">
-								<span><strong>AutoConsommation </strong></span>
-								<span className="badge badge-warning">1000</span>
-							</div> */}
 						</div>
 					</div>
 					<div className="row row-grid box">
 						<div className="col">
 							<Graph2 />
+							<div className="legendGraph2">
+								<span>Production</span><div className="prodBox"></div>
+								<span>Consommation</span><div className="consoBox"></div>
+								<span>Autoconsommation</span><div className="autoConsoBox"></div>
+							</div>
 						</div>
 						<div className="col">
 							<CarouselSun />

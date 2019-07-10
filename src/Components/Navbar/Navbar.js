@@ -59,10 +59,10 @@ export default function Navbar() {
               </a>
             </li>
 			{/* <li className="nav-item">
-			<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus." onClick={() => popover()}>
-  Popover on bottom
-</button>
+				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" 
+				data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." onClick={() => popover()}>
+					Popover on bottom
+				</button>
             </li> */}
           </ul>
         </div>
