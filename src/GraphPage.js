@@ -10,7 +10,7 @@ import './App.css';
 import './GraphPage.css';
 import './assets/css/argon.min.css';
 import './assets/icons/icofont.min.css';
-import ModalInfo from './Components/ModalInfo/ModalInfo';
+// import ModalInfo from './Components/ModalInfo/ModalInfo';
 
 function GraphPage() {
   return (
