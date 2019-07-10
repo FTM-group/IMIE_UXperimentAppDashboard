@@ -38,16 +38,17 @@ span.badgeCircleNumber {
     margin-right: 1em;
 }
 .prodBox {
-    border: 1px solid rgba(219, 75, 29, 1);
-    background-color: rgba(219, 75, 29, 1);
+    
+    border: 1px solid rgba(240, 200, 15, 1);
+    background-color: rgba(240, 200, 15, 1);
     /* border-radius: 5px; */
     width: 2em;
     height: 1em;
     margin-right: 1em;
 }
 .consoBox {
-    border: 1px solid rgba(240, 200, 15, 1);
-    background-color: rgba(240, 200, 15, 1);
+    border: 1px solid rgba(219, 75, 29, 1);
+    background-color: rgba(219, 75, 29, 1);
     /* border-radius: 5px; */
     width: 2em;
     height: 1em;
