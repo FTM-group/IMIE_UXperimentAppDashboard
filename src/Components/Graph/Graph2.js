@@ -64,9 +64,6 @@ class Graph2 extends React.Component {
                         <div className="col">
                             <Chart2 chartData={this.state.chartData} location="SunShare" legendPosition="bottom" />
                         </div>
-                        {/* <div className="col">
-                            <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
-                        </div> */}
                     </div>
                 </div>
             </div>

@@ -36,22 +36,6 @@ class Chart extends Component {
                         }
                     }}
                 />
-                {/* <div className="doughnutBox">
-                <Doughnut
-                    data={this.state.chartData}
-                    options={{
-                        title: {
-                            display: this.props.displayTitle,
-                            text: 'Prod & Conso ' + this.props.location,
-                            fontSize: 25
-                        },
-                        legend: {
-                            display: this.props.displayLegend,
-                            position: this.props.legendPosition
-                        }
-                    }}
-                />
-                </div> */}
             </div>
         )
     }
