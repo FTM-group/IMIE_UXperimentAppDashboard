@@ -19,7 +19,7 @@ class Graph2 extends React.Component {
         // Ajax calls here
         this.setState({
             chartData: {
-                labels: [   ],
+                labels: [ '','' ],
                 datasets: [
                     {
                         label: 'Autoconsommation',
