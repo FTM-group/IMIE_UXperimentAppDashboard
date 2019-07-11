@@ -19,15 +19,18 @@ class Graph2 extends React.Component {
         // Ajax calls here
         this.setState({
             chartData: {
-                labels: [ '','' ],
+                labels: [ '','' ], // label des hover
                 datasets: [
                     {
                         label: 'Autoconsommation',
                         data: [225, 1000],
                         backgroundColor: [
-                            "rgba(43, 220, 240, 1)",// zone
+                            "rgba(43, 220, 240, 1)", // couleur de la zone
                             "rgba(255, 255, 255, 1)" 
-                        ]
+                        ],
+                        hoverBackgroundColor: [ "rgba(43, 220, 240, 1)", "#fff" ], 
+                        // hoverBorderColor: ["white"]
+                        hoverBorderWidth: 0 // taille de la bordure au survole
                     },
                     {
                         label: 'Consommation',

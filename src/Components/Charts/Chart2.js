@@ -13,7 +13,7 @@ class Chart2 extends Component {
         displayTitle: true,
         displayLegend: false,
         legendPosition: 'right',
-        location: 'City'
+        location: 'City',
     }
 
     render() {
